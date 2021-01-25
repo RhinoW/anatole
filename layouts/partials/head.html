@@ -4,9 +4,9 @@
     <!-- Meta -->
     <meta charset="utf-8">
     {{- hugo.Generator -}}
-    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-    <meta name="description" content="{{ .Site.Params.description }}">
-       
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">    
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    
 {{- if .Site.Params.google_GA4_MeasurementID }}
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.google_GA4_MeasurementID }}"></script>
