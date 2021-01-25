@@ -37,11 +37,14 @@
     integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
     crossorigin="anonymous" />
 
-    <!-- Favicons -->
-    <link rel="shortcut icon" href="{{ .Site.Params.favicon | absURL }}favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.Params.favicon | absURL }}apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.Params.favicon | absURL }}favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ .Site.Params.favicon | absURL }}favicon-16x16.png">
+    <!-- FavIcons and related files from https://realfavicongenerator.net/ --> 
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#727491">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#727491">
 
     <link rel="canonical" href="{{ .Permalink }}">
 
