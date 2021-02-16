@@ -10,7 +10,7 @@
             {{ if .Site.Params.profilePictureAnimated }}
             <script>
                 window.addEventListener('load', function() {
-                    setTimeout(toggleProfilePic,1000);
+                    setTimeout(toggleProfilePic,2000);
                 });
 
                 function toggleProfilePic() {
@@ -20,7 +20,7 @@
                     profileImage.dataset.altimage = tmp;
                 }
                 document.getElementById("profileImage").addEventListener('click', toggleProfilePic);
-            </script>>
+            </script>
             {{ end }}
         </div>
     </div>
